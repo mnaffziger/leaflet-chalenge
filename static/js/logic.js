@@ -12,8 +12,9 @@ function createMap(earthquakes) {
 
     // Create map object with options
     let map = L.map("map", {
-        center: [45.5, -120],
-        zoom: 5,
+        // center: [45.5, -120], // on Oregon, USA
+        center: [0,0],
+        zoom: 1,
         layers: [streetmap]
     });
 
