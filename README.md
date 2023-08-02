@@ -2,9 +2,10 @@
 Module 15 Challenge: Map Visualization with Leaflet
 
 ### Notes
+* Within the Leaflet-Part-1 and Leaflet-Part-2 directories are separate html, js, and css files for the 2 parts of the challenge assignment. 
 * Sourse material was pulled from the USGS website for 'All Earthquakes from the Past 7 Days"
-* Within the Leaflet-Part-1 and Leaflet-Part-2 directories are separate html, js, and css files for the 2 parts of the challenge assignment.
-* Additional maps were sourced from https://leaflet-extras.github.io/leaflet-providers/preview/
+
+
 
 ### Leaflet Plugins
 Due to how the Leaflet base map is constructed the longitude continues past +/- 180 degrees.  Normally this artifact would be OK since the maps are typically focused to a small geographic area.  However, in this challenge I am pullilng global data on earthquake epicenters.  For all data circling the International Dateline, the original data is either placed on the east coast of Asia, or on the west of the Americas. Unfortunently, this means that data around the Pacific Ocean can never been observed at the same time.  Leaflet does provide on board fixes such as setting map boundries, or worldCopyJump, but none of these solutions are acceptable for the end user.  
